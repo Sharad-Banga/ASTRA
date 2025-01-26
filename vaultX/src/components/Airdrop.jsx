@@ -6,19 +6,26 @@ export const Airdrop =()=>{
 
   const wallet = useWallet();
   const {connection } = useConnection();
+  // const connection = new Connection("https://api.devnet.solana.com");
+
 
   function sendAirdropToUser(){
-    alert("airdrop begin");
-    connection.requestAirdrop(wallet.publicKey ,2000000000);
+    let j = document.getElementById("input").value;
+
+    alert("airdrop begin",j);
+    console.log("huu",j);
+    
+    connection.requestAirdrop(wallet.publicKey ,j*1000000000);
     alert("airdrop done");
 
   }
 
   return(
     <>
-    hi mrs {wallet.publicKey.toString()}
+    Your public key : {wallet.publicKey? wallet.publicKey.toString() : "id"}
+    {wallet.balance}
     <br />
-    <input type="text" />
+    <input id="input" type="text" />
     <button onClick={sendAirdropToUser}>Send Airdrop</button>
     </>
   )
