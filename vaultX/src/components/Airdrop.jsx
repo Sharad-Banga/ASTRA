@@ -1,7 +1,7 @@
 import { WalletError } from "@solana/wallet-adapter-base";
 import { useConnection, useWallet } from "@solana/wallet-adapter-react"
 
-
+import './Airdrop.css'
 export const Airdrop =()=>{
 
   const wallet = useWallet();
@@ -21,12 +21,13 @@ export const Airdrop =()=>{
   }
 
   return(
-    <>
-    Your public key : {wallet.publicKey? wallet.publicKey.toString() : "id"}
-    {wallet.balance}
-    <br />
+    
+    <div className="air">
+   
+    <span>Request Airdrop</span>
+    
     <input id="input" type="text" />
     <button onClick={sendAirdropToUser}>Send Airdrop</button>
-    </>
+    </div>
   )
 }

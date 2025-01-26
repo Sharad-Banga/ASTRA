@@ -13,7 +13,6 @@ import {
 import '@solana/wallet-adapter-react-ui/styles.css';
 import './App.css'
 
-
 import { Airdrop } from './components/Airdrop';
 import { Balance } from './components/Balance';
 function App() {
@@ -28,28 +27,35 @@ function App() {
       <ConnectionProvider id="d1" endpoint={"https://api.devnet.solana.com"}>
             <div className="d1">
             
-            <WalletProvider wallets={[]} autoConnect>
+              <WalletProvider wallets={[]} autoConnect>
                 <div className="d2">
+                  <div className="sol">
+                    <img src="https://cdn.brandfetch.io/ide0NUuTHO/theme/light/logo.svg?c=1bfwsmEH20zzEfSNTed" alt="" />
+
                   
-                <WalletModalProvider>
-                  <div>
-                  <div className="btn">
-                  <WalletMultiButton/>
-                  <WalletDisconnectButton></WalletDisconnectButton>
-                  </div>
-                  <div className="d3">
-                    
-                  hi there
-                    <Balance></Balance>
                   
+                  <h2> Airdrop</h2>
+
                   </div>
-                  </div>
-                  <Airdrop></Airdrop>
-            </WalletModalProvider>
+                    <WalletModalProvider>
+                      
+                        <div className="btn">
+                          <WalletMultiButton/>
+                          <WalletDisconnectButton></WalletDisconnectButton>
+                        </div>
+
+                        <div className="bal">
+                        
+                          
+                          <Balance></Balance>
+                        
+                        </div>
+                      <Airdrop></Airdrop>
+                    </WalletModalProvider>
                 </div>
-        </WalletProvider>
+              </WalletProvider>
             </div>
-    </ConnectionProvider>
+      </ConnectionProvider>
     </div>
   )
 }
