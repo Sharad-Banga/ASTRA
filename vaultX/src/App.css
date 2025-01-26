@@ -78,7 +78,7 @@
 }
 
 .d2{
-  background-color: rgba(38, 38, 38, 0.621);
+  background-color: rgba(38, 38, 38, 0.016);
   width: 100vw;
   display:flex;
   flex-direction: column;
@@ -86,7 +86,8 @@
   align-items: center;
   width: 60%;
   padding:5%;
-  border: 1px solid rgb(61, 61, 61);
+  /* border: 1px solid rgb(61, 61, 61); */
+  border-radius: 5px;
 }
 
 .bal{

@@ -23,7 +23,7 @@ getBalance();
     return(
 
       <>
-          <h2>SOL Balance :&nbsp;{balance} </h2>
+          {balance && <h2>SOL Balance :&nbsp;{balance} </h2>}
       </>
 
     )
