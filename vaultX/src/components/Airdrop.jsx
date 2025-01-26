@@ -26,7 +26,7 @@ export const Airdrop =()=>{
    
     <span>Request Airdrop</span>
     
-    <input id="input" type="text" />
+    <input placeholder=" &nbsp;Enter SOL" id="input" type="text" />
     <button onClick={sendAirdropToUser}>Send Airdrop</button>
     </div>
   )
