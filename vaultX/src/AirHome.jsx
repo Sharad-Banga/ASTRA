@@ -14,9 +14,13 @@ export const AirHome=()=>{
 
   return (
     <ConnectionProvider id="d1" endpoint={"https://api.devnet.solana.com"}>
+
+              
+      
             <div className="d1">
             
               <WalletProvider wallets={[]} autoConnect>
+              <Balance></Balance>
                 <div className="d2">
                   <div className="sol">
                     <img src="https://cdn.brandfetch.io/ide0NUuTHO/theme/light/logo.svg?c=1bfwsmEH20zzEfSNTed" alt="" />
@@ -38,7 +42,7 @@ export const AirHome=()=>{
                         <div className="bal">
                         
                           
-                          <Balance></Balance>
+                         
                         
                         </div>
                       <Airdrop></Airdrop>

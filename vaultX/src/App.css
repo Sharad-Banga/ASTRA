@@ -45,7 +45,7 @@
   display: flex;
   flex-direction: row;
   font-size: 100%;
-  height: 7vh;
+  height: 9vh;
   align-items: center;
   width: 40%;
   justify-content: space-evenly;
@@ -55,23 +55,41 @@
   padding-right: 3%;
   font-weight: bold;
 }
+.nav .midnav:hover{
+  
+  display: flex;
+  flex-direction: row;
+  font-size: 100%;
+  height: 9vh;
+  align-items: center;
+  width: 40%;
+  justify-content: space-evenly;
+  font-family:'Trebuchet MS', sans-serif;
+  cursor: pointer;
+  padding-left: 3%;
+  padding-right: 3%;
+  font-weight: bold;
+  color: #14F195;
+}
 .nav .midnav-on{
   display: flex;
   flex-direction: row;
   font-size: 100%;
   font-weight: bold;
   gap: 8%;
-  height: 7vh;
+  height: 9vh;
   align-items: center;
   width: 40%;
   justify-content: center;
   font-family:'Trebuchet MS', sans-serif;
   cursor: pointer;
-  background-color: #14f1951f;
+  /* background-color: #14f1951f;
+   */
+   background-image: linear-gradient(to bottom, #9945ff26,#14f1951b);
   color: #14F195;
   padding-left: 3%;
   padding-right: 3%;
-  border-bottom: 3px solid #14F195;
+  border-bottom: 2.5px solid #14F195;
 }
 
  .nav h1{
@@ -124,7 +142,7 @@
   display: flex;
   font-size:medium;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin-top: 20px;
+  margin-top: 1px;
   font-style: normal;
   justify-content: center;
   align-items: center;

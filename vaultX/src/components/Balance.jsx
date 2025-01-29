@@ -1,6 +1,7 @@
 import { useConnection, useWallet } from "@solana/wallet-adapter-react"
 import { useState } from "react";
 
+import "./Balance.css";
 
 export const Balance=()=>{
   
@@ -19,11 +20,13 @@ export const Balance=()=>{
   }
 
 getBalance();
-
+let g = "connect wallet";
     return(
 
       <>
-          {balance && <h2>SOL Balance :&nbsp;{balance} </h2>}
+          <dev className="balOne">
+            <h2>💰 Balance:&nbsp;{({balance})?balance:`{g}`} </h2>
+          </dev>
       </>
 
     )
