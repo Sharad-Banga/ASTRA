@@ -6,7 +6,8 @@ import {
     WalletMultiButton
 } from '@solana/wallet-adapter-react-ui';
 
-import './ConnectBtn.css';
+import "./ConnectBtn.css";
+
 
 import { Airdrop } from './Airdrop';
 import { Balance } from './Balance';
