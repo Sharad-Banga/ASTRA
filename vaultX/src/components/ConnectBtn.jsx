@@ -1,7 +1,8 @@
 import { ConnectionProvider, WalletProvider } from '@solana/wallet-adapter-react';
 
 import {
-    WalletModalProvider
+    WalletModalProvider,
+    WalletMultiButton
 } from '@solana/wallet-adapter-react-ui';
 
 import "./Connectbtn.css";
