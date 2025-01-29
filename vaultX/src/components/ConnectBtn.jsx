@@ -4,9 +4,7 @@ import {
     WalletModalProvider
 } from '@solana/wallet-adapter-react-ui';
 
-import "./ConnectBtn.css";
-
-
+import "./Connectbtn.css";
 
 export const ConnectBtn=()=>{
 
