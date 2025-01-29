@@ -1,16 +1,12 @@
 import { ConnectionProvider, WalletProvider } from '@solana/wallet-adapter-react';
 
 import {
-    WalletModalProvider,
-    WalletDisconnectButton,
-    WalletMultiButton
+    WalletModalProvider
 } from '@solana/wallet-adapter-react-ui';
 
 import "./ConnectBtn.css";
 
 
-import { Airdrop } from './Airdrop';
-import { Balance } from './Balance';
 
 export const ConnectBtn=()=>{
 
