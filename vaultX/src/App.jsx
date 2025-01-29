@@ -1,63 +1,40 @@
 
-import React, { FC, useMemo } from 'react';
-import { ConnectionProvider, WalletProvider } from '@solana/wallet-adapter-react';
+import React, { FC, } from 'react';
+import {BrowserRouter , Route ,Routes, Link} from "react-router-dom";
 
-import {
-    WalletModalProvider,
-    WalletDisconnectButton,
-    WalletMultiButton
-} from '@solana/wallet-adapter-react-ui';
+import {Nav} from "./components/Nav";
 
-
-// Default styles that can be overridden by your app
 import '@solana/wallet-adapter-react-ui/styles.css';
 import './App.css'
-
 import { Airdrop } from './components/Airdrop';
-import { Balance } from './components/Balance';
+import { AirHome } from './AirHome';
+import { Landing } from './Landing';
+
 function App() {
-  // const endpoint = import.meta.env.VITE_ENDPOINT;
+
 
   return (
+    <BrowserRouter >
     <div className="body">
-      <div className="nav">
-        <h1>vaultX</h1>
-        <a href="/">Home</a>
+      <Nav />
+      <Routes>
+      
+      <Route path="/" element={<AirHome />} />
+      <Route path="/wallet" element={<WalletPage />} />
+      <Route path="/transaction" element={<TransactionPage />} />
+      <Route path="/sign" element={<SignPage />} />
+      <Route path="/mint" element={<MintPage />} />
+
+      </Routes>
       </div>
-      <ConnectionProvider id="d1" endpoint={"https://api.devnet.solana.com"}>
-            <div className="d1">
-            
-              <WalletProvider wallets={[]} autoConnect>
-                <div className="d2">
-                  <div className="sol">
-                    <img src="https://cdn.brandfetch.io/ide0NUuTHO/theme/light/logo.svg?c=1bfwsmEH20zzEfSNTed" alt="" />
-
-                  
-                  
-                  <h2> Airdrop</h2>
-
-                  </div>
-                    <WalletModalProvider>
-                      
-                        <div className="btn">
-                          <WalletMultiButton/>
-                          <WalletDisconnectButton></WalletDisconnectButton>
-                        </div>
-
-                        <div className="bal">
-                        
-                          
-                          <Balance></Balance>
-                        
-                        </div>
-                      <Airdrop></Airdrop>
-                    </WalletModalProvider>
-                </div>
-              </WalletProvider>
-            </div>
-      </ConnectionProvider>
-    </div>
+    </BrowserRouter>
   )
 }
+
+const WalletPage = () => <h2>Wallet Page</h2>;
+const TransactionPage = () => <h2>Transaction Page</h2>;
+const SignPage = () => <h2>Sign Page</h2>;
+const MintPage = () => <h2>Mint Page</h2>;
+
 
 export default App

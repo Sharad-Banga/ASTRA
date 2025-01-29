@@ -1,0 +1,9 @@
+
+.btn-1{
+  background-color : gray;
+  color : white;
+  height:35px;
+  padding:10px;
+  border : 1px solid linear-gradient(to right, #9945FF, #14F195,#14F195);
+  border-radius:20px;
+}
