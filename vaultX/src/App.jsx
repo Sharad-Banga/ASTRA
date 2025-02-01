@@ -9,7 +9,7 @@ import './App.css'
 import { Airdrop } from './components/Airdrop';
 import { AirHome } from './AirHome';
 import { Landing } from './Landing';
-
+import {Footer } from "./components/Footer";
 function App() {
 
 
