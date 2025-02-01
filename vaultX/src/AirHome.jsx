@@ -6,9 +6,10 @@ import {
     WalletMultiButton
 } from '@solana/wallet-adapter-react-ui';
 
-
+import "./App.css"
 import { Airdrop } from './components/Airdrop';
 import { Balance } from './components/Balance';
+import { ConnectBtn } from './components/ConnectBtn';
 
 export const AirHome=()=>{
 
@@ -19,37 +20,41 @@ export const AirHome=()=>{
       
             <div className="d1">
             
+
+             
               <WalletProvider wallets={[]} autoConnect>
               <Balance></Balance>
                 <div className="d2">
                   <div className="sol">
-                    <img src="https://cdn.brandfetch.io/ide0NUuTHO/theme/light/logo.svg?c=1bfwsmEH20zzEfSNTed" alt="" />
-
                   
-                  
-                  <h2> Airdrop</h2>
+                  <h2> ✈︎ &nbsp; Get your Airdrop</h2>
 
                   </div>
+                  <Airdrop></Airdrop>
                     <WalletModalProvider>
-                      
                         <div className="btn">
-                          <WalletMultiButton style={{
+                          {/* <WalletMultiButton style={{
                             backgroundColor : "red"
-                          }} > Connect</WalletMultiButton>
+                          }} > Connect</WalletMultiButton> */}
+                          <ConnectBtn style={{
+                            Border : "1px solid blue",
+                          
+                          }}>
+                          </ConnectBtn>
+
                           <WalletDisconnectButton></WalletDisconnectButton>
                         </div>
-
-                        <div className="bal">
-                        
-                          
-                         
-                        
+                          <div className="bal">
                         </div>
-                      <Airdrop></Airdrop>
+                        
                     </WalletModalProvider>
-                </div>
+                  </div>
+
+
               </WalletProvider>
-            </div>
+              </div>
+
+            
       </ConnectionProvider>
     
   )

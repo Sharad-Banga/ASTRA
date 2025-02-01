@@ -14,10 +14,19 @@ function App() {
 
 
   return (
+    <div style={{
+      background: `linear-gradient(to bottom, #000000c7, #00000000), url("./assets/bg.jpg")`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundAttachment: "fixed",
+      height: "100vh",
+      width: "100vw",
+      color: "white",
+    }}>
     <BrowserRouter >
     <div className="body">
       <Nav />
-      <Routes>
+      <Routes >
       
       <Route path="/" element={<AirHome />} />
       <Route path="/wallet" element={<WalletPage />} />
@@ -28,6 +37,7 @@ function App() {
       </Routes>
       </div>
     </BrowserRouter>
+    </div>
   )
 }
 

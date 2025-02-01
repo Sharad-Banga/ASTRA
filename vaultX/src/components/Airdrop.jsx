@@ -1,6 +1,8 @@
 import { WalletError } from "@solana/wallet-adapter-base";
 import { useConnection, useWallet } from "@solana/wallet-adapter-react"
 
+import loggo from "../assets/solanaLogoMark.png"
+
 import './Airdrop.css'
 export const Airdrop =()=>{
 
@@ -21,13 +23,21 @@ export const Airdrop =()=>{
   }
 
   return(
-    
+    <>
     <div className="air">
-   
-    <span>Request Airdrop</span>
-    
-    <input placeholder=" &nbsp;Enter SOL" id="input" type="text" />
-    <button onClick={sendAirdropToUser}>Send Airdrop</button>
+        <input placeholder="0.00" id="input" type="text" />
+          <div className="soll">
+              <div className="imgg">
+                <img src={loggo}/>
+              </div>
+            <h3>&nbsp; SOL</h3>
+          </div>
     </div>
+
+    <div className="air1">
+      <button onClick={sendAirdropToUser}>Request Airdrop</button>
+    </div>
+    
+    </>
   )
 }
