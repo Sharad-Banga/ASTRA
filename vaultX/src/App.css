@@ -121,7 +121,7 @@
 
 .d1{
   background-color: rgb(201, 190, 190);
-  margin-top: 20px;
+  /* margin-top: 0%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,6 +129,8 @@
   background-color: rgba(85, 85, 85, 0);
   width: 70%;
   margin-left: 15%;
+  margin-top: 2%;
+  max-height: 1000%;
 }
 
  .d1 img{
@@ -149,7 +151,7 @@
   width: 450px;
   padding: 10px;
   padding-top: 15px;
-  margin-top: 30px;
+  margin-top: 40px;
   border-radius: 10px;
 }
 
@@ -159,7 +161,6 @@
   font-family:'Courier New', Courier, monospace;
   width: 90%;
   font-style: normal;
-  margin-bottom: 0%;
 }
 
 
@@ -168,10 +169,11 @@
  .btn{
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-top: 30px;
-  width: 90%;
+  width: 100%;
   justify-content: center;
-  gap: 2%;
+  gap: 10%;
 }
 
 
@@ -184,8 +186,8 @@
   align-items: center;
   justify-content: center;
   font-family:Arial, Helvetica, sans-serif;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 
 

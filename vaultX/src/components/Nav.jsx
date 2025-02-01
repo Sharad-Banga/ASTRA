@@ -1,12 +1,10 @@
 // import { AirHome } from '../AirHome';
 import { useLocation } from "react-router-dom";
-import {ConnectBtn} from "./ConnectBtn";
 import { NavLink } from "react-router-dom";
 import '../App.css'
 
 
 export const Nav=()=>{
-const location = useLocation();
 
   return (
                       <div className="nav">
@@ -19,12 +17,15 @@ const location = useLocation();
                           <NavLink to="/mint" className={({ isActive }) => isActive ? "midnav-on" : "midnav"}>Mint</NavLink>
                         </div>
                         {/* <a href="/">Home</a> */}
-                        <ConnectBtn style={
-                          {
-                            background:"red"
-                          }
-                        }>
-                        </ConnectBtn>
+
+
+                        <div className="home" 
+
+                        style={{
+                          marginRight:"5%"
+                        }}
+                        
+                        ><a href="/">Home</a></div>
                       </div>
       
   )

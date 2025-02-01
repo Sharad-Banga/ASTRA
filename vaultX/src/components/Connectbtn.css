@@ -1,9 +1,10 @@
 
 .btn-1{
-  background-color : gray;
+  background-color : rgb(0, 0, 0);
   color : white;
   height:35px;
   padding:10px;
   border : 1px solid linear-gradient(to right, #9945FF, #14F195,#14F195);
   border-radius:20px;
+  
 }
