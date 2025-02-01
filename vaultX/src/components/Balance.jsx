@@ -24,9 +24,9 @@ let g = "connect wallet";
     return(
 
       <>
-          <dev className="balOne">
+          <div className="balOne">
             <h2>💰 Balance:&nbsp;{({balance})?balance:`{g}`} </h2>
-          </dev>
+          </div>
       </>
 
     )
