@@ -14,17 +14,9 @@ function App() {
 
 
   return (
-    <div style={{
-      background: `linear-gradient(to bottom, #000000c7, #00000000), url("./assets/bg.jpg")`,
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      backgroundAttachment: "fixed",
-      height: "100vh",
-      width: "100vw",
-      color: "white",
-    }}>
+    <div className="body" >
     <BrowserRouter >
-    <div className="body">
+    <div >
       <Nav />
       <Routes >
       
@@ -37,6 +29,9 @@ function App() {
       </Routes>
       </div>
     </BrowserRouter>
+    <div className="footer">
+            Developed and Designed By <a className="footer-link" href="https://x.com/sharad_banga" target="_blank" rel="noopener noreferrer">&nbsp;  Sharad Banga</a>
+        </div>
     </div>
   )
 }

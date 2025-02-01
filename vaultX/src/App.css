@@ -1,7 +1,7 @@
 
 .body{
   box-sizing: border-box;
-  background: url("./assets/bg.jpg") no-repeat bottom , linear-gradient(to bottom, #000000c7,#00000000);
+  background: url("./assets/gradii-bg.png") no-repeat bottom , linear-gradient(to bottom, #000000c7,#00000000);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; 
@@ -13,6 +13,7 @@
   height: 100vh;
   width: 100vw;
   color: white;
+  background-color: #14F195;
 }
 
 
@@ -196,3 +197,31 @@
     font-size: medium;
     color: #14F195;
 }
+
+
+.footer .footer-link{
+  color: rgb(172, 164, 164);
+  text-decoration: none;
+
+  &:hover{
+    color: #14F195;
+  }
+  
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 15px;
+  font-family:Arial, Helvetica, sans-serif;
+  border-top: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  margin:0px;
+  font-weight: bolder;
+  height: 40px;
+}
+
