@@ -34,3 +34,24 @@
   justify-content:center;
   /* background-image: linear-gradient(black,#14f1950e,#14f19508,black); */
 }
+
+
+@media screen and (max-width: 480px) {
+  .balOne {
+    width: 90%;
+    max-width: 350px; 
+    height: auto; 
+    padding: 12px; 
+    font-size: small; 
+    text-align: center; 
+  }
+
+  .balOne:hover {
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    padding: 12px;
+    font-size: small;
+    box-shadow: 0 0 4px #14F195;
+  }
+}

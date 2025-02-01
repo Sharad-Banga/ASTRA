@@ -224,4 +224,59 @@
   font-weight: bolder;
   height: 40px;
 }
+@media (max-width: 768px) {
+  .body {
+      height: auto;
+      width: 100%;
+      background-attachment: scroll;
+  }
 
+  .nav {
+      flex-direction: column;
+      text-align: center;
+      height: auto;
+      padding: 15px 0;
+  }
+
+  .nav .midnav-o, 
+  .nav .midnav,
+  .nav .midnav-on {
+    margin-top: 5px;
+      flex-direction: row;
+      width: 100%;
+      height: auto;
+      font-size: 80%; 
+  }
+
+  .nav  a{
+      display: none; 
+  }
+
+  .nav h1 span {
+      font-size: 24px;
+      padding-right: 5px;
+  }
+
+  .d1 {
+      width: 90%;
+      margin-left: 5%;
+  }
+
+  .d2 {
+      width: 90%;
+      margin: 20px auto;
+      padding: 10px;
+  }
+
+  .btn {
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+  }
+
+  .footer {
+      position: relative;
+      font-size: 14px;
+      padding: 8px 0;
+  }
+}
