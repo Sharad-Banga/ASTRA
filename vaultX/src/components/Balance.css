@@ -41,11 +41,10 @@
     width: 90%;
     max-width: 350px; 
     height: auto; 
-    padding: 12px; 
-    font-size: 6px; 
+    padding: 6px; 
+    font-size: 10px; 
     text-align: center; 
     margin-top: 10px;
-    margin-bottom: 5px;
   }
 
   .balOne:hover {
@@ -54,8 +53,8 @@
     width: 90%;
     max-width: 350px;
     height: auto;
-    padding: 12px;
-    font-size: small;
+    padding: 6px; 
+    font-size: 10px; 
     box-shadow: 0 0 4px #14F195;
   }
 }
