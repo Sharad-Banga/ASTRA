@@ -237,6 +237,7 @@
       height: auto;
       padding: 15px 0;
       align-items: center;
+      padding-top:4px; 
   }
 
   .nav .midnav-o, 
@@ -254,13 +255,15 @@
   }
 
   .nav h1 span {
-      font-size: 24px;
+      font-size: 20px;
       padding-right: 5px;
+      padding-top: 3px;
   }
   .nav h1 {
     padding-top: 10px;
-    margin-right: 20px;
+    margin-right: 10px;
     margin-left: 10px;
+    font-size: 13px;
   }
 
   .d1 {
@@ -276,12 +279,13 @@
 
   .btn {
       flex-direction: column;
-      gap: 15px;
+      gap: 10px;
       width: 100%;
+      margin-top: 20px;
   }
 
   .footer {
-    margin-top: auto;
+    margin-top: 1px;
       font-size: 14px;
       padding: 8px 0;
   }

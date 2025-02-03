@@ -174,5 +174,6 @@ input::placeholder{
   .air1 button {
     height: 50px; 
     font-size: medium;
+    margin-top:15px ;
   }
 }
